@@ -12,8 +12,6 @@ import MessageUI
 
 public class SHSupportEmail: NSObject {
     
-    static let sharedInstance = SHSupportEmail()
-    
     var mailCompletionHandler: ((MFMailComposeResult, Error?) -> Void)?
     
     public func send(to recipients: [String], subject: String, from viewController: UIViewController, completion: ((MFMailComposeResult, Error?) -> Void)? = nil) {
