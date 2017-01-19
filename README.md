@@ -2,7 +2,7 @@
 Prepopulates emails with support information in iOS apps
 
 ### About
-SHSupportEmail is about simplifying support for apps. By prepopulating device information in your support email link, you can save your users and yourself time and needless back and forth.
+SHSupportEmail is about simplifying support for apps. By prepopulating device information in your embedded support email link, you can save time and needless back and forth between you and your users.
 
 ### Requirements
 - Xcode 8.0+
@@ -16,16 +16,16 @@ Manually for now, CocoaPods and Carthage support coming soon!
 SHSupportEmail is really simple and currently has just one method.
 
     SHSupportEmail().send(to: ["support@test.com"], subject: "Support", from: self) { result, error in
-                switch result {
-                    case .cancelled:
-                        print("Message cancelled")
-                    case .failed:
-                        print("Message failed")
-                    case .saved:
-                        print("Message saved")
-                    case .sent:
-                        print("Message sent")
-            }
+        switch result {
+            case .cancelled:
+                print("Message cancelled")
+            case .failed:
+                print("Message failed")
+            case .saved:
+                print("Message saved")
+            case .sent:
+                print("Message sent")
+        }
     }
 
 The send function takes 3 arguments:
