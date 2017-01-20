@@ -43,7 +43,7 @@ public class SHSupportEmail: NSObject {
         }
         
         deviceInfo.append("Device Model: \(UIDevice.current.model)\n")
-        deviceInfo.append("System Version: \(UIDevice.current.systemName)\n")
+        deviceInfo.append("System Version: \(UIDevice.current.systemName) \(UIDevice.current.systemVersion)\n")
         deviceInfo.append("System Locale: \(Locale.current.identifier)")
         
         return deviceInfo
