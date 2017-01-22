@@ -1,4 +1,5 @@
 # SHSupportEmail
+[![Build Status](https://travis-ci.org/schayes04/SHSupportEmail.svg?branch=master)](https://travis-ci.org/schayes04/SHSupportEmail) [![Swift Version](https://img.shields.io/badge/Swift-3.0+-F16D39.svg?style=flat)](https://developer.apple.com/swift)
 Prepopulates emails with support information in iOS apps
 
 ![Screenshot](/Screenshot.PNG?raw=true)
