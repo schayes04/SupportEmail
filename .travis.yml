@@ -2,4 +2,4 @@ language: objective-c
 osx_image: xcode8.2
 
 script: 
-  - xctool -project SHSupportEmailDemo.xcodeproj -scheme SHSupportEmailDemo -sdk iphonesimulator clean build
+  - xcodebuild -project SHSupportEmailDemo.xcodeproj -target SHSupportEmailDemo clean build
