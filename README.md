@@ -14,7 +14,12 @@ SHSupportEmail is about simplifying support for apps. By prepopulating device in
 - Swift 3.0+
 
 ### Installation
-Manually for now, CocoaPods and Carthage support coming soon!
+#### CocoaPods
+
+The preferred installation method is with [CocoaPods](https://cocoapods.org). Add the following to your Podfile:
+```ruby
+pod 'SHSupportEmail', '~> 1.0.0'
+```
 
 ### Usage
 SHSupportEmail is really simple and currently has just one method.
