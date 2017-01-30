@@ -13,6 +13,7 @@ import MessageUI
 public class SHSupportEmail: NSObject {
     
     var mailCompletionHandler: ((MFMailComposeResult, Error?) -> Void)?
+    var customFields: [String: Any]?
     
     public func send(to recipients: [String], subject: String, from viewController: UIViewController, completion: ((MFMailComposeResult, Error?) -> Void)? = nil) {
         mailCompletionHandler = completion
@@ -36,7 +37,13 @@ public class SHSupportEmail: NSObject {
     private func generateEmailBody() -> String {
         
         /// Initial new lines leave space for the user to write their own text
-        var deviceInfo = "\n\n\n\n\n------------------\n"
+        var deviceInfo = "\n\n\n\n------------------\n"
+        
+        if let customFields = customFields {
+            for (key, value) in customFields {
+                deviceInfo.append("\(key): \(value)\n")
+            }
+        }
         
         if let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] {
             deviceInfo.append("App Version: \(version)\n")
