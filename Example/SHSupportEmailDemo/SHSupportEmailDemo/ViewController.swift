@@ -11,7 +11,9 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBAction func sendSupportEmailPressed() {
-        SHSupportEmail().send(to: ["support@test.com"], subject: "Support", from: self) { result, error in
+        let supportEmail = SHSupportEmail()
+        supportEmail.customFields = ["Pro Upgrade": "Yes"]
+        supportEmail.send(to: ["support@test.com"], subject: "Support", from: self) { result, error in
             self.dismiss(animated: true, completion: nil)
             
             switch result {
