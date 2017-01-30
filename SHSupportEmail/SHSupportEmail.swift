@@ -12,7 +12,7 @@ import MessageUI
 public class SHSupportEmail: NSObject {
     
     var mailCompletionHandler: ((MFMailComposeResult, Error?) -> Void)?
-    var customFields: [String: Any]?
+    public var customFields: [String: Any]?
     
     public func send(to recipients: [String], subject: String, from viewController: UIViewController, completion: ((MFMailComposeResult, Error?) -> Void)? = nil) {
         mailCompletionHandler = completion
