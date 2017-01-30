@@ -6,7 +6,6 @@
 //  Copyright © 2016 Stephen Hayes. All rights reserved.
 //
 
-import Foundation
 import UIKit
 import MessageUI
 
