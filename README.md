@@ -3,7 +3,7 @@
 
 Prepopulates emails with support information in iOS apps
 
-![Screenshot](/Screenshot.PNG?raw=true)
+![Screenshot](/Screenshot.PNG?raw=true width="300")
 
 ### About
 SHSupportEmail is about simplifying support for apps. By prepopulating device information in your embedded support email link, you can save time and needless back and forth between you and your users.
