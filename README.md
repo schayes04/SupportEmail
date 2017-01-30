@@ -37,6 +37,7 @@ The send function takes 3 arguments:
 - The subject of the support email
 - The view controller the MFMailComposeViewController is to be presented on
 
+### Advanced
 SHSupportEmail also supports providing custom arguments.
 
     let supportEmail = SHSupportEmail()
