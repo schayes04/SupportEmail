@@ -1,5 +1,5 @@
 # SHSupportEmail
-[![Platform](https://img.shields.io/badge/platform-iOS-blue.svg?style=flat)](https://img.shields.io/badge/platform-iOS-blue.svg?style=flat) [![Build Status](https://travis-ci.org/schayes04/SHSupportEmail.svg?branch=master)](https://travis-ci.org/schayes04/SHSupportEmail) [![CocoaPods](https://img.shields.io/cocoapods/v/SHSupportEmail.svg?style=flat)](https://cocoapods.org/pods/SHSupportEmail) [![Swift Version](https://img.shields.io/badge/Swift-3.0+-F16D39.svg?style=flat)](https://developer.apple.com/swift)
+[![Platform](https://img.shields.io/badge/platform-iOS-blue.svg?style=flat)](https://img.shields.io/badge/platform-iOS-blue.svg?style=flat) [![CocoaPods](https://img.shields.io/cocoapods/v/SHSupportEmail.svg?style=flat)](https://cocoapods.org/pods/SHSupportEmail) [![Swift Version](https://img.shields.io/badge/Swift-3.0+-F16D39.svg?style=flat)](https://developer.apple.com/swift)
 
 Prepopulates emails with support information in iOS apps
 
