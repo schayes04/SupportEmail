@@ -65,6 +65,7 @@ public class SHSupportEmail: NSObject {
 extension SHSupportEmail: MFMailComposeViewControllerDelegate {
 
     public func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true)
         mailCompletionHandler?(result, error)
     }
 }

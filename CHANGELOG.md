@@ -1,3 +1,7 @@
+## 1.2.0 (5/7/2017)
+
+- Library now handles dismissal of MFMailComposeViewController
+
 ## 1.1.0 (5/7/2017)
 
 - Added tintColor property for customizing navigation bar appearance
