@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'SHSupportEmail'
-  s.version          = '1.1.0'
+  s.version          = '1.2.0'
   s.summary          = 'Prepopulates emails with support information in iOS apps'
 
   s.description      = <<-DESC

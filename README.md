@@ -18,7 +18,7 @@ SHSupportEmail is about simplifying support for apps. By prepopulating device in
 
 The preferred installation method is with [CocoaPods](https://cocoapods.org). Add the following to your Podfile:
 ```ruby
-pod 'SHSupportEmail', '~> 1.1.0'
+pod 'SHSupportEmail', '~> 1.2.0'
 ```
 
 ### Usage
