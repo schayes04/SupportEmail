@@ -10,10 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var supportEmail: SHSupportEmail?
+    
     @IBAction func sendSupportEmailPressed() {
-        let supportEmail = SHSupportEmail()
-        supportEmail.customFields = ["Pro Upgrade": "Yes"]
-        supportEmail.send(to: ["support@test.com"], subject: "Support", from: self) { result, error in
+        supportEmail = SHSupportEmail()
+        supportEmail?.customFields = ["Pro Upgrade": "Yes"]
+        supportEmail?.send(to: ["support@test.com"], subject: "Support", from: self) { result, error in
             self.dismiss(animated: true, completion: nil)
             
             switch result {
