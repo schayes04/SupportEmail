@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'SHSupportEmail'
-  s.version          = '1.0.0'
+  s.version          = ‘1.1.0’
   s.summary          = 'Prepopulates emails with support information in iOS apps'
 
   s.description      = <<-DESC
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/schayes04/SHSupportEmail'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'git' => 'support@shayesapps.com' }
-  s.source           = { :git => 'https://github.com/schayes04/SHSupportEmail.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/schayes04/SHSupportEmail.git', :tag => s.version }
   s.social_media_url = 'https://twitter.com/shayesapps'
 
   s.ios.deployment_target = '8.0'

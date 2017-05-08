@@ -9,16 +9,16 @@ Prepopulates emails with support information in iOS apps
 SHSupportEmail is about simplifying support for apps. By prepopulating device information in your embedded support email link, you can save time and needless back and forth between you and your users. Check out [Countdown Widget](https://itunes.apple.com/us/app/countdown-widget-keep-track/id917514700?mt=8) to see SHSupportEmail in action.
 
 ### Requirements
-- Xcode 8.0+
+- Xcode 8.3+
 - iOS 8.0+
-- Swift 3.0+
+- Swift 3.1+
 
 ### Installation
 #### CocoaPods
 
 The preferred installation method is with [CocoaPods](https://cocoapods.org). Add the following to your Podfile:
 ```ruby
-pod 'SHSupportEmail', '~> 1.0.0'
+pod 'SHSupportEmail', '~> 1.1.0'
 ```
 
 ### Usage
@@ -47,6 +47,24 @@ SHSupportEmail also supports providing custom arguments.
 
     let supportEmail = SHSupportEmail()
     supportEmail.customFields = ["Pro Upgrade": "Yes"]
+    supportEmail.send(to: ["support@test.com"], subject: "Support", from: self) { result, error in
+        switch result {
+            case .cancelled:
+                print("Message cancelled")
+            case .failed:
+                print("Message failed")
+            case .saved:
+                print("Message saved")
+            case .sent:
+                print("Message sent")
+        }
+    }
+
+### Customization
+SHSupportEmail allows you to provide a tintColor in order to customize the appearance of the navigation bar.
+
+    let supportEmail = SHSupportEmail()
+    supportEmail.tintColor = .white
     supportEmail.send(to: ["support@test.com"], subject: "Support", from: self) { result, error in
         switch result {
             case .cancelled:

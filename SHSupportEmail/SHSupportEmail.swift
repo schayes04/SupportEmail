@@ -13,6 +13,7 @@ public class SHSupportEmail: NSObject {
     
     var mailCompletionHandler: ((MFMailComposeResult, Error?) -> Void)?
     public var customFields: [String: Any]?
+    public var tintColor: UIColor?
     
     public func send(to recipients: [String], subject: String, from viewController: UIViewController, completion: ((MFMailComposeResult, Error?) -> Void)? = nil) {
         mailCompletionHandler = completion
@@ -28,6 +29,11 @@ public class SHSupportEmail: NSObject {
         mailComposeViewController.setToRecipients(recipients)
         mailComposeViewController.setSubject(subject)
         mailComposeViewController.setMessageBody(generateEmailBody(), isHTML: false)
+        
+        if let tintColor = tintColor {
+            mailComposeViewController.navigationBar.barTintColor = tintColor
+            mailComposeViewController.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: tintColor]
+        }
         
         viewController.present(mailComposeViewController, animated: true, completion: nil)
     }
