@@ -1,3 +1,7 @@
+## 1.3.0 (6/3/2017)
+
+- Added the ability to specify the statusBarStyle of the MFMailComposeViewController
+
 ## 1.2.0 (5/7/2017)
 
 - Library now handles dismissal of MFMailComposeViewController

@@ -18,7 +18,7 @@ SHSupportEmail is about simplifying support for apps. By prepopulating device in
 
 The preferred installation method is with [CocoaPods](https://cocoapods.org). Add the following to your Podfile:
 ```ruby
-pod 'SHSupportEmail', '~> 1.2.0'
+pod 'SHSupportEmail', '~> 1.3.0'
 ```
 
 ### Usage
@@ -61,10 +61,11 @@ SHSupportEmail also supports providing custom arguments.
     }
 
 ### Customization
-SHSupportEmail allows you to provide a tintColor in order to customize the appearance of the navigation bar.
+SHSupportEmail allows you to provide a tintColor in order to customize the appearance of the navigation bar. It also allows you to specify the status bar style.
 
     let supportEmail = SHSupportEmail()
-    supportEmail.tintColor = .white
+    supportEmail.tintColor = .blue
+    supportEmail.statusBarStyle = .lightContent
     supportEmail.send(to: ["support@test.com"], subject: "Support", from: self) { result, error in
         switch result {
             case .cancelled:
