@@ -23,6 +23,7 @@ pod 'SHSupportEmail', '~> 1.3.0'
 
 ### Usage
 SHSupportEmail is really simple and currently has just one method.
+
     let supportEmail = SHSupportEmail()
     supportEmail.send(to: ["support@test.com"], subject: "Support", from: self) { result, error in
         switch result {
