@@ -11,12 +11,12 @@ import UIKit
 class ViewController: UIViewController {
 
     var supportEmail: SHSupportEmail?
-    
+
     @IBAction func sendSupportEmailPressed() {
         supportEmail = SHSupportEmail()
         supportEmail?.customFields = ["Pro Upgrade": "Yes"]
         supportEmail?.tintColor = .blue
-        supportEmail?.send(to: ["support@test.com"], subject: "Support", from: self) { result, error in
+        supportEmail?.send(to: ["support@test.com"], subject: "Support", from: self) { result, _ in
             switch result {
                 case .cancelled:
                     print("Message cancelled")
