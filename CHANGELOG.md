@@ -1,3 +1,7 @@
+## 2.0.0 (TBD)
+
+- Upgraded to Swift 4/Xcode 9
+
 ## 1.3.1 (7/23/2017)
 
 - Added support for SwiftLint
