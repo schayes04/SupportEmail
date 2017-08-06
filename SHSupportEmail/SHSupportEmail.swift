@@ -34,7 +34,7 @@ public class SHSupportEmail: NSObject {
 
         if let tintColor = tintColor {
             mailComposeViewController.navigationBar.tintColor = tintColor
-            mailComposeViewController.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: tintColor]
+            mailComposeViewController.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: tintColor]
         }
 
         viewController.present(mailComposeViewController, animated: true) {
