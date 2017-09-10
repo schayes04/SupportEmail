@@ -38,8 +38,10 @@ public class SHSupportEmail: NSObject {
             mailComposeViewController.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: tintColor]
         }
 
-        viewController.present(mailComposeViewController, animated: true) {
-            UIApplication.shared.statusBarStyle = self.statusBarStyle
+        viewController.present(mailComposeViewController, animated: true) { [weak self] in
+            if let weakSelf = self {
+                UIApplication.shared.statusBarStyle = weakSelf.statusBarStyle
+            }
         }
     }
 
