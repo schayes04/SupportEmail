@@ -1,5 +1,5 @@
 # SHSupportEmail
-[![Platform](https://img.shields.io/badge/platform-iOS-blue.svg?style=flat)](https://img.shields.io/badge/platform-iOS-blue.svg?style=flat) [![CocoaPods](https://img.shields.io/cocoapods/v/SHSupportEmail.svg?style=flat)](https://cocoapods.org/pods/SHSupportEmail) [![Swift Version](https://img.shields.io/badge/Swift-3.0+-F16D39.svg?style=flat)](https://developer.apple.com/swift)
+[![Platform](https://img.shields.io/badge/platform-iOS-blue.svg?style=flat)](https://img.shields.io/badge/platform-iOS-blue.svg?style=flat) [![CocoaPods](https://img.shields.io/cocoapods/v/SHSupportEmail.svg?style=flat)](https://cocoapods.org/pods/SHSupportEmail) [![Swift Version](https://img.shields.io/badge/Swift-4.0+-F16D39.svg?style=flat)](https://developer.apple.com/swift)
 
 Prepopulates emails with support information in iOS apps
 
@@ -9,16 +9,16 @@ Prepopulates emails with support information in iOS apps
 SHSupportEmail is about simplifying support for apps. By prepopulating device information in your embedded support email link, you can save time and needless back and forth between you and your users. Check out [Countdown Widget](https://itunes.apple.com/us/app/countdown-widget-keep-track/id917514700?mt=8) to see SHSupportEmail in action.
 
 ### Requirements
-- Xcode 8.3+
+- Xcode 9.0+
 - iOS 8.0+
-- Swift 3.1+
+- Swift 4.0+
 
 ### Installation
 #### CocoaPods
 
 The preferred installation method is with [CocoaPods](https://cocoapods.org). Add the following to your Podfile:
 ```ruby
-pod 'SHSupportEmail', '~> 1.3.1'
+pod 'SHSupportEmail', '~> 2.0.0'
 ```
 
 ### Usage

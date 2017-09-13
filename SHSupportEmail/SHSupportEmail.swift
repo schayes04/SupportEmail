@@ -34,11 +34,14 @@ public class SHSupportEmail: NSObject {
 
         if let tintColor = tintColor {
             mailComposeViewController.navigationBar.tintColor = tintColor
-            mailComposeViewController.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: tintColor]
+            // swiftlint:disable:next line_length
+            mailComposeViewController.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: tintColor]
         }
 
-        viewController.present(mailComposeViewController, animated: true) {
-            UIApplication.shared.statusBarStyle = self.statusBarStyle
+        viewController.present(mailComposeViewController, animated: true) { [weak self] in
+            if let weakSelf = self {
+                UIApplication.shared.statusBarStyle = weakSelf.statusBarStyle
+            }
         }
     }
 

@@ -1,3 +1,7 @@
+## 2.0.0 (9/13/2017)
+
+- Upgraded to Swift 4/Xcode 9.0
+
 ## 1.3.1 (7/23/2017)
 
 - Added support for SwiftLint
