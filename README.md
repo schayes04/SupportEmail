@@ -26,7 +26,7 @@ Due to how MFMailComposeViewController works, you must retain a reference to SHS
 
     var supportEmail: SHSupportEmail?
 
-SHSupportEmail is really simple and has just one method. `send` will allow you to craft the email and handle the end result.
+Using SHSupportEmail is really simple and has just one method. `send` will allow you to craft the email and handle the end result:
 
     supportEmail = SHSupportEmail()
     supportEmail.send(to: ["support@test.com"], subject: "Support", from: self) { result, error in
