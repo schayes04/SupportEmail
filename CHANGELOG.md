@@ -1,3 +1,7 @@
+## 2.1.0 (12/10/2017)
+
+- Added ability to send as a text file instead of email body.
+
 ## 2.0.0 (9/13/2017)
 
 - Upgraded to Swift 4/Xcode 9.0

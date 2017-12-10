@@ -18,23 +18,27 @@ SHSupportEmail is about simplifying support for apps. By prepopulating device in
 
 The preferred installation method is with [CocoaPods](https://cocoapods.org). Add the following to your Podfile:
 ```ruby
-pod 'SHSupportEmail', '~> 2.0.0'
+pod 'SHSupportEmail', '~> 2.1.0'
 ```
 
 ### Usage
-SHSupportEmail is really simple and currently has just one method.
+Due to how MFMailComposeViewController works, you must retain a reference to SHSupportEmail outside of where you are sending the email.
 
-    let supportEmail = SHSupportEmail()
+    var supportEmail: SHSupportEmail?
+
+Using SHSupportEmail is really simple and has just one method. `send` will allow you to craft the email and handle the end result:
+
+    supportEmail = SHSupportEmail()
     supportEmail.send(to: ["support@test.com"], subject: "Support", from: self) { result, error in
         switch result {
-            case .cancelled:
-                print("Message cancelled")
-            case .failed:
-                print("Message failed")
-            case .saved:
-                print("Message saved")
-            case .sent:
-                print("Message sent")
+        case .cancelled:
+            print("Message cancelled")
+        case .failed:
+            print("Message failed")
+        case .saved:
+            print("Message saved")
+        case .sent:
+            print("Message sent")
         }
     }
 
@@ -46,39 +50,17 @@ The send function takes 3 arguments:
 ### Advanced
 SHSupportEmail also supports providing custom arguments.
 
-    let supportEmail = SHSupportEmail()
     supportEmail.customFields = ["Pro Upgrade": "Yes"]
-    supportEmail.send(to: ["support@test.com"], subject: "Support", from: self) { result, error in
-        switch result {
-            case .cancelled:
-                print("Message cancelled")
-            case .failed:
-                print("Message failed")
-            case .saved:
-                print("Message saved")
-            case .sent:
-                print("Message sent")
-        }
-    }
 
 ### Customization
+SHSupportEmail allows you to provide choose between sending a text file or just content in the email body. Defaults to sending as a text file.
+
+    supportEmail.sendAsTextFile = false
+
 SHSupportEmail allows you to provide a tintColor in order to customize the appearance of the navigation bar. It also allows you to specify the status bar style.
 
-    let supportEmail = SHSupportEmail()
     supportEmail.tintColor = .blue
     supportEmail.statusBarStyle = .lightContent
-    supportEmail.send(to: ["support@test.com"], subject: "Support", from: self) { result, error in
-        switch result {
-            case .cancelled:
-                print("Message cancelled")
-            case .failed:
-                print("Message failed")
-            case .saved:
-                print("Message saved")
-            case .sent:
-                print("Message sent")
-        }
-    }
 
 ### License
 

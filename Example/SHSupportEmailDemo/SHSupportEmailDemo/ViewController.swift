@@ -16,16 +16,17 @@ class ViewController: UIViewController {
         supportEmail = SHSupportEmail()
         supportEmail?.customFields = ["Pro Upgrade": "Yes"]
         supportEmail?.tintColor = .blue
+        supportEmail?.sendAsTextFile = false
         supportEmail?.send(to: ["support@test.com"], subject: "Support", from: self) { result, _ in
             switch result {
-                case .cancelled:
-                    print("Message cancelled")
-                case .failed:
-                    print("Message failed")
-                case .saved:
-                    print("Message saved")
-                case .sent:
-                    print("Message sent")
+            case .cancelled:
+                print("Message cancelled")
+            case .failed:
+                print("Message failed")
+            case .saved:
+                print("Message saved")
+            case .sent:
+                print("Message sent")
             }
         }
     }
