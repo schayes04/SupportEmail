@@ -11,10 +11,12 @@ import MessageUI
 
 public class SHSupportEmail: NSObject {
 
-    var mailCompletionHandler: ((MFMailComposeResult, Error?) -> Void)?
     public var customFields: [String: Any]?
+    public var sendAsTextFile = true
     public var tintColor: UIColor?
     public var statusBarStyle = UIStatusBarStyle.lightContent
+
+    private var mailCompletionHandler: ((MFMailComposeResult, Error?) -> Void)?
 
     // swiftlint:disable:next line_length
     public func send(to recipients: [String], subject: String, from viewController: UIViewController, completion: ((MFMailComposeResult, Error?) -> Void)? = nil) {
@@ -30,7 +32,15 @@ public class SHSupportEmail: NSObject {
 
         mailComposeViewController.setToRecipients(recipients)
         mailComposeViewController.setSubject(subject)
-        mailComposeViewController.setMessageBody(generateEmailBody(), isHTML: false)
+
+        let deviceInfo = generateEmailBody()
+        if sendAsTextFile, let data = deviceInfo.data(using: .utf8) {
+            mailComposeViewController.addAttachmentData(data, mimeType: "text/plain", fileName: "DeviceInfo.txt")
+        } else {
+            /// Add new lines to leave space for the user to write their own text
+            let deviceInfoNewLines = "\n\n\n\n------------------\n" + deviceInfo
+            mailComposeViewController.setMessageBody(deviceInfoNewLines, isHTML: false)
+        }
 
         if let tintColor = tintColor {
             mailComposeViewController.navigationBar.tintColor = tintColor
@@ -47,9 +57,7 @@ public class SHSupportEmail: NSObject {
 
     /// Generate the body of the email
     private func generateEmailBody() -> String {
-
-        /// Initial new lines leave space for the user to write their own text
-        var deviceInfo = "\n\n\n\n------------------\n"
+        var deviceInfo = ""
 
         if let customFields = customFields {
             for (key, value) in customFields {
