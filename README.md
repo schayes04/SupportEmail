@@ -22,18 +22,23 @@ pod 'SHSupportEmail', '~> 2.1.0'
 ```
 
 ### Usage
-SHSupportEmail is really simple and has just one method.
+Due to how MFMailComposeViewController works, you must retain a reference to SHSupportEmail outside of where you are sending the email.
 
+    var supportEmail: SHSupportEmail?
+
+SHSupportEmail is really simple and has just one method. `send` will allow you to craft the email and handle the end result.
+
+    supportEmail = SHSupportEmail()
     supportEmail.send(to: ["support@test.com"], subject: "Support", from: self) { result, error in
         switch result {
-            case .cancelled:
-                print("Message cancelled")
-            case .failed:
-                print("Message failed")
-            case .saved:
-                print("Message saved")
-            case .sent:
-                print("Message sent")
+        case .cancelled:
+            print("Message cancelled")
+        case .failed:
+            print("Message failed")
+        case .saved:
+            print("Message saved")
+        case .sent:
+            print("Message sent")
         }
     }
 
