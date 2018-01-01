@@ -3,7 +3,7 @@
 //  SHSupportEmailDemo
 //
 //  Created by Stephen Hayes on 12/18/16.
-//  Copyright © 2016 Stephen Hayes. All rights reserved.
+//  Copyright © 2018 Stephen Hayes. All rights reserved.
 //
 
 import UIKit
