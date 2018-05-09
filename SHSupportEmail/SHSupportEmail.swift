@@ -65,15 +65,29 @@ public class SHSupportEmail: NSObject {
             }
         }
 
+        // Add spacing between the custom fields and the default ones
+        deviceInfo.append("\n")
+
         if let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] {
             deviceInfo.append("App Version: \(version)\n")
         }
 
+        deviceInfo.append("Device Type Identifier: \(deviceTypeIdentifier())\n")
         deviceInfo.append("Device Model: \(UIDevice.current.model)\n")
         deviceInfo.append("System Version: \(UIDevice.current.systemName) \(UIDevice.current.systemVersion)\n")
         deviceInfo.append("System Locale: \(Locale.current.identifier)")
 
         return deviceInfo
+    }
+
+    private func deviceTypeIdentifier() -> String {
+        #if targetEnvironment(simulator)
+            return "Simulator"
+        #endif
+
+        var sysinfo = utsname()
+        uname(&sysinfo)
+        return String(bytes: Data(bytes: &sysinfo.machine, count: Int(_SYS_NAMELEN)), encoding: .ascii)?.trimmingCharacters(in: .controlCharacters) ?? "Unknown"
     }
 }
 
