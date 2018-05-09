@@ -1,3 +1,7 @@
+## 2.2.0 (5/9/2018)
+
+- Added device type identifier to the default information sent.
+
 ## 2.1.0 (12/10/2017)
 
 - Added ability to send as a text file instead of email body.
