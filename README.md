@@ -18,7 +18,7 @@ SHSupportEmail is about simplifying support for apps. By prepopulating device in
 
 The preferred installation method is with [CocoaPods](https://cocoapods.org). Add the following to your Podfile:
 ```ruby
-pod 'SHSupportEmail', '~> 2.2.0'
+pod 'SHSupportEmail', '~> 2.3.0'
 ```
 
 ### Usage
@@ -53,9 +53,10 @@ SHSupportEmail also supports providing custom arguments.
     supportEmail.customFields = ["Pro Upgrade": "Yes"]
 
 ### Customization
-SHSupportEmail allows you to provide choose between sending a text file or just content in the email body. Defaults to sending as a text file.
+SHSupportEmail allows you to provide choose between sending a text file or just content in the email body. Defaults to sending as a text file. If you are sending as a text file you can also specify the file name.
 
-    supportEmail.sendAsTextFile = false
+    supportEmail.sendAsTextFile = true
+    supportEmail.fileName = "Sample File Name"
 
 SHSupportEmail allows you to provide a tintColor in order to customize the appearance of the navigation bar. It also allows you to specify the status bar style.
 

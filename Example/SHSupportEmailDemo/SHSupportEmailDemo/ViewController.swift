@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         supportEmail = SHSupportEmail()
         supportEmail?.customFields = ["Pro Upgrade": "Yes"]
         supportEmail?.tintColor = .blue
-        supportEmail?.sendAsTextFile = false
+        supportEmail?.fileName = "DemoFile"
         supportEmail?.send(to: ["support@test.com"], subject: "Support", from: self) { result, _ in
             switch result {
             case .cancelled:

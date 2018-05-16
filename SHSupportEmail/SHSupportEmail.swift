@@ -15,6 +15,7 @@ public class SHSupportEmail: NSObject {
     public var sendAsTextFile = true
     public var tintColor: UIColor?
     public var statusBarStyle = UIStatusBarStyle.lightContent
+    public var fileName = "DeviceInfo"
 
     private var mailCompletionHandler: ((MFMailComposeResult, Error?) -> Void)?
 
@@ -37,7 +38,7 @@ public class SHSupportEmail: NSObject {
 
         let deviceInfo = generateEmailBody()
         if sendAsTextFile, let data = deviceInfo.data(using: .utf8) {
-            mailComposeViewController.addAttachmentData(data, mimeType: "text/plain", fileName: "DeviceInfo.txt")
+            mailComposeViewController.addAttachmentData(data, mimeType: "text/plain", fileName: fileName)
         } else {
             /// Add new lines to leave space for the user to write their own text
             let deviceInfoNewLines = "\n\n\n\n------------------\n" + deviceInfo
