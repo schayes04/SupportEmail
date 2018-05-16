@@ -18,8 +18,10 @@ public class SHSupportEmail: NSObject {
 
     private var mailCompletionHandler: ((MFMailComposeResult, Error?) -> Void)?
 
-    // swiftlint:disable:next line_length
-    public func send(to recipients: [String], subject: String, from viewController: UIViewController, completion: ((MFMailComposeResult, Error?) -> Void)? = nil) {
+    public func send(to recipients: [String],
+                     subject: String,
+                     from viewController: UIViewController,
+                     completion: ((MFMailComposeResult, Error?) -> Void)? = nil) {
         mailCompletionHandler = completion
 
         guard MFMailComposeViewController.canSendMail() else {
@@ -43,9 +45,10 @@ public class SHSupportEmail: NSObject {
         }
 
         if let tintColor = tintColor {
+            let attributes = [NSAttributedStringKey.foregroundColor: tintColor]
+
             mailComposeViewController.navigationBar.tintColor = tintColor
-            // swiftlint:disable:next line_length
-            mailComposeViewController.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: tintColor]
+            mailComposeViewController.navigationBar.titleTextAttributes = attributes
         }
 
         viewController.present(mailComposeViewController, animated: true) { [weak self] in
@@ -93,8 +96,8 @@ public class SHSupportEmail: NSObject {
 
 extension SHSupportEmail: MFMailComposeViewControllerDelegate {
 
-    // swiftlint:disable:next line_length
-    public func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+    public func mailComposeController(_ controller: MFMailComposeViewController,
+                                      didFinishWith result: MFMailComposeResult, error: Error?) {
         controller.dismiss(animated: true)
         mailCompletionHandler?(result, error)
     }
