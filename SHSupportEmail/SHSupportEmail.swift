@@ -15,7 +15,7 @@ public class SHSupportEmail: NSObject {
     public var sendAsTextFile = true
     public var tintColor: UIColor?
     public var statusBarStyle = UIStatusBarStyle.lightContent
-    public var fileName = "DeviceInfo"
+    public var fileName = "Device Info"
 
     private var mailCompletionHandler: ((MFMailComposeResult, Error?) -> Void)?
 
@@ -76,22 +76,11 @@ public class SHSupportEmail: NSObject {
             deviceInfo.append("App Version: \(version)\n")
         }
 
-        deviceInfo.append("Device Type Identifier: \(deviceTypeIdentifier())\n")
-        deviceInfo.append("Device Model: \(UIDevice.current.model)\n")
+        deviceInfo.append("Device Model: \(UIDevice.modelName)\n")
         deviceInfo.append("System Version: \(UIDevice.current.systemName) \(UIDevice.current.systemVersion)\n")
         deviceInfo.append("System Locale: \(Locale.current.identifier)")
 
         return deviceInfo
-    }
-
-    private func deviceTypeIdentifier() -> String {
-        #if targetEnvironment(simulator)
-            return "Simulator"
-        #endif
-
-        var sysinfo = utsname()
-        uname(&sysinfo)
-        return String(bytes: Data(bytes: &sysinfo.machine, count: Int(_SYS_NAMELEN)), encoding: .ascii)?.trimmingCharacters(in: .controlCharacters) ?? "Unknown"
     }
 }
 
