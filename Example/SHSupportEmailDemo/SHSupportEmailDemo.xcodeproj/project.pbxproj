@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9A60C82E1E0786610088B6C9 /* SHSupportEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A60C82D1E0786610088B6C9 /* SHSupportEmail.swift */; };
 		9A60C8311E0787EC0088B6C9 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A60C8301E0787EC0088B6C9 /* MessageUI.framework */; };
+		9AAFB86720BCCEA70097A219 /* DeviceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAFB86620BCCEA70097A219 /* DeviceExtensions.swift */; };
 		9AED9E2C1E07855C00C4FCE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AED9E2B1E07855C00C4FCE0 /* AppDelegate.swift */; };
 		9AED9E2E1E07855C00C4FCE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AED9E2D1E07855C00C4FCE0 /* ViewController.swift */; };
 		9AED9E311E07855C00C4FCE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AED9E2F1E07855C00C4FCE0 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		9A60C82D1E0786610088B6C9 /* SHSupportEmail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SHSupportEmail.swift; path = ../../../SHSupportEmail/SHSupportEmail.swift; sourceTree = "<group>"; };
 		9A60C8301E0787EC0088B6C9 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		9AAFB86620BCCEA70097A219 /* DeviceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DeviceExtensions.swift; path = ../../../SHSupportEmail/DeviceExtensions.swift; sourceTree = "<group>"; };
 		9AED9E281E07855C00C4FCE0 /* SHSupportEmailDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SHSupportEmailDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AED9E2B1E07855C00C4FCE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AED9E2D1E07855C00C4FCE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				9AED9E2B1E07855C00C4FCE0 /* AppDelegate.swift */,
 				9AED9E2D1E07855C00C4FCE0 /* ViewController.swift */,
 				9A60C82D1E0786610088B6C9 /* SHSupportEmail.swift */,
+				9AAFB86620BCCEA70097A219 /* DeviceExtensions.swift */,
 				9AED9E2F1E07855C00C4FCE0 /* Main.storyboard */,
 				9AED9E321E07855C00C4FCE0 /* Assets.xcassets */,
 				9AED9E341E07855C00C4FCE0 /* LaunchScreen.storyboard */,
@@ -171,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A60C82E1E0786610088B6C9 /* SHSupportEmail.swift in Sources */,
+				9AAFB86720BCCEA70097A219 /* DeviceExtensions.swift in Sources */,
 				9AED9E2E1E07855C00C4FCE0 /* ViewController.swift in Sources */,
 				9AED9E2C1E07855C00C4FCE0 /* AppDelegate.swift in Sources */,
 			);

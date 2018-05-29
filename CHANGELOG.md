@@ -1,3 +1,7 @@
+## 2.4.0 (5/28/2018)
+
+- Provide device names instead of just their identifiers.
+
 ## 2.3.0 (5/16/2018)
 
 - Allow customization of the name of the file generated.
