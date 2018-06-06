@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9A60C82E1E0786610088B6C9 /* SHSupportEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A60C82D1E0786610088B6C9 /* SHSupportEmail.swift */; };
 		9A60C8311E0787EC0088B6C9 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A60C8301E0787EC0088B6C9 /* MessageUI.framework */; };
-		9AAFB86720BCCEA70097A219 /* DeviceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAFB86620BCCEA70097A219 /* DeviceExtensions.swift */; };
-		9AED9E2C1E07855C00C4FCE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AED9E2B1E07855C00C4FCE0 /* AppDelegate.swift */; };
-		9AED9E2E1E07855C00C4FCE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AED9E2D1E07855C00C4FCE0 /* ViewController.swift */; };
-		9AED9E311E07855C00C4FCE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AED9E2F1E07855C00C4FCE0 /* Main.storyboard */; };
-		9AED9E331E07855C00C4FCE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AED9E321E07855C00C4FCE0 /* Assets.xcassets */; };
-		9AED9E361E07855C00C4FCE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AED9E341E07855C00C4FCE0 /* LaunchScreen.storyboard */; };
+		9AFA862120C76F0B0020E692 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFA861920C76F0B0020E692 /* ViewController.swift */; };
+		9AFA862220C76F0B0020E692 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AFA861A20C76F0B0020E692 /* Assets.xcassets */; };
+		9AFA862320C76F0B0020E692 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AFA861B20C76F0B0020E692 /* LaunchScreen.storyboard */; };
+		9AFA862420C76F0B0020E692 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AFA861D20C76F0B0020E692 /* Main.storyboard */; };
+		9AFA862520C76F0B0020E692 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFA861F20C76F0B0020E692 /* AppDelegate.swift */; };
+		9AFA862A20C76F390020E692 /* DeviceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFA862820C76F390020E692 /* DeviceExtensions.swift */; };
+		9AFA862B20C76F390020E692 /* SupportEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFA862920C76F390020E692 /* SupportEmail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9A60C82D1E0786610088B6C9 /* SHSupportEmail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SHSupportEmail.swift; path = ../../../SHSupportEmail/SHSupportEmail.swift; sourceTree = "<group>"; };
 		9A60C8301E0787EC0088B6C9 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		9AAFB86620BCCEA70097A219 /* DeviceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DeviceExtensions.swift; path = ../../../SHSupportEmail/DeviceExtensions.swift; sourceTree = "<group>"; };
-		9AED9E281E07855C00C4FCE0 /* SHSupportEmailDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SHSupportEmailDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9AED9E2B1E07855C00C4FCE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9AED9E2D1E07855C00C4FCE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9AED9E301E07855C00C4FCE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9AED9E321E07855C00C4FCE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9AED9E351E07855C00C4FCE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9AED9E371E07855C00C4FCE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AED9E281E07855C00C4FCE0 /* SupportEmailDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SupportEmailDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AFA861920C76F0B0020E692 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9AFA861A20C76F0B0020E692 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9AFA861C20C76F0B0020E692 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9AFA861E20C76F0B0020E692 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9AFA861F20C76F0B0020E692 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9AFA862020C76F0B0020E692 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AFA862820C76F390020E692 /* DeviceExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceExtensions.swift; sourceTree = "<group>"; };
+		9AFA862920C76F390020E692 /* SupportEmail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportEmail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +53,7 @@
 		9AED9E1F1E07855B00C4FCE0 = {
 			isa = PBXGroup;
 			children = (
-				9AED9E2A1E07855C00C4FCE0 /* SHSupportEmailDemo */,
+				9AFA861820C76F0B0020E692 /* SupportEmailDemo */,
 				9AED9E291E07855C00C4FCE0 /* Products */,
 				9A60C82F1E0787EC0088B6C9 /* Frameworks */,
 			);
@@ -62,32 +62,41 @@
 		9AED9E291E07855C00C4FCE0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9AED9E281E07855C00C4FCE0 /* SHSupportEmailDemo.app */,
+				9AED9E281E07855C00C4FCE0 /* SupportEmailDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9AED9E2A1E07855C00C4FCE0 /* SHSupportEmailDemo */ = {
+		9AFA861820C76F0B0020E692 /* SupportEmailDemo */ = {
 			isa = PBXGroup;
 			children = (
-				9AED9E2B1E07855C00C4FCE0 /* AppDelegate.swift */,
-				9AED9E2D1E07855C00C4FCE0 /* ViewController.swift */,
-				9A60C82D1E0786610088B6C9 /* SHSupportEmail.swift */,
-				9AAFB86620BCCEA70097A219 /* DeviceExtensions.swift */,
-				9AED9E2F1E07855C00C4FCE0 /* Main.storyboard */,
-				9AED9E321E07855C00C4FCE0 /* Assets.xcassets */,
-				9AED9E341E07855C00C4FCE0 /* LaunchScreen.storyboard */,
-				9AED9E371E07855C00C4FCE0 /* Info.plist */,
+				9AFA862720C76F390020E692 /* SupportEmail */,
+				9AFA861920C76F0B0020E692 /* ViewController.swift */,
+				9AFA861A20C76F0B0020E692 /* Assets.xcassets */,
+				9AFA861B20C76F0B0020E692 /* LaunchScreen.storyboard */,
+				9AFA861D20C76F0B0020E692 /* Main.storyboard */,
+				9AFA861F20C76F0B0020E692 /* AppDelegate.swift */,
+				9AFA862020C76F0B0020E692 /* Info.plist */,
 			);
-			path = SHSupportEmailDemo;
+			path = SupportEmailDemo;
+			sourceTree = "<group>";
+		};
+		9AFA862720C76F390020E692 /* SupportEmail */ = {
+			isa = PBXGroup;
+			children = (
+				9AFA862820C76F390020E692 /* DeviceExtensions.swift */,
+				9AFA862920C76F390020E692 /* SupportEmail.swift */,
+			);
+			name = SupportEmail;
+			path = ../../../SupportEmail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9AED9E271E07855B00C4FCE0 /* SHSupportEmailDemo */ = {
+		9AED9E271E07855B00C4FCE0 /* SupportEmailDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9AED9E3A1E07855C00C4FCE0 /* Build configuration list for PBXNativeTarget "SHSupportEmailDemo" */;
+			buildConfigurationList = 9AED9E3A1E07855C00C4FCE0 /* Build configuration list for PBXNativeTarget "SupportEmailDemo" */;
 			buildPhases = (
 				9AED9E241E07855B00C4FCE0 /* Sources */,
 				9AED9E251E07855B00C4FCE0 /* Frameworks */,
@@ -98,9 +107,9 @@
 			);
 			dependencies = (
 			);
-			name = SHSupportEmailDemo;
+			name = SupportEmailDemo;
 			productName = SHSupportEmailDemo;
-			productReference = 9AED9E281E07855C00C4FCE0 /* SHSupportEmailDemo.app */;
+			productReference = 9AED9E281E07855C00C4FCE0 /* SupportEmailDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -121,7 +130,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9AED9E231E07855B00C4FCE0 /* Build configuration list for PBXProject "SHSupportEmailDemo" */;
+			buildConfigurationList = 9AED9E231E07855B00C4FCE0 /* Build configuration list for PBXProject "SupportEmailDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -134,7 +143,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9AED9E271E07855B00C4FCE0 /* SHSupportEmailDemo */,
+				9AED9E271E07855B00C4FCE0 /* SupportEmailDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -144,9 +153,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AED9E361E07855C00C4FCE0 /* LaunchScreen.storyboard in Resources */,
-				9AED9E331E07855C00C4FCE0 /* Assets.xcassets in Resources */,
-				9AED9E311E07855C00C4FCE0 /* Main.storyboard in Resources */,
+				9AFA862220C76F0B0020E692 /* Assets.xcassets in Resources */,
+				9AFA862420C76F0B0020E692 /* Main.storyboard in Resources */,
+				9AFA862320C76F0B0020E692 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,30 +182,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A60C82E1E0786610088B6C9 /* SHSupportEmail.swift in Sources */,
-				9AAFB86720BCCEA70097A219 /* DeviceExtensions.swift in Sources */,
-				9AED9E2E1E07855C00C4FCE0 /* ViewController.swift in Sources */,
-				9AED9E2C1E07855C00C4FCE0 /* AppDelegate.swift in Sources */,
+				9AFA862A20C76F390020E692 /* DeviceExtensions.swift in Sources */,
+				9AFA862520C76F0B0020E692 /* AppDelegate.swift in Sources */,
+				9AFA862B20C76F390020E692 /* SupportEmail.swift in Sources */,
+				9AFA862120C76F0B0020E692 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9AED9E2F1E07855C00C4FCE0 /* Main.storyboard */ = {
+		9AFA861B20C76F0B0020E692 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9AED9E301E07855C00C4FCE0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		9AED9E341E07855C00C4FCE0 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9AED9E351E07855C00C4FCE0 /* Base */,
+				9AFA861C20C76F0B0020E692 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9AFA861D20C76F0B0020E692 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AFA861E20C76F0B0020E692 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -314,9 +323,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C75928FBL3;
-				INFOPLIST_FILE = SHSupportEmailDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SupportEmailDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hayes.stephen.SHSupportEmailDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hayes.stephen.SupportEmailDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
@@ -328,9 +337,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C75928FBL3;
-				INFOPLIST_FILE = SHSupportEmailDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SupportEmailDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hayes.stephen.SHSupportEmailDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hayes.stephen.SupportEmailDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
@@ -340,7 +349,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9AED9E231E07855B00C4FCE0 /* Build configuration list for PBXProject "SHSupportEmailDemo" */ = {
+		9AED9E231E07855B00C4FCE0 /* Build configuration list for PBXProject "SupportEmailDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9AED9E381E07855C00C4FCE0 /* Debug */,
@@ -349,7 +358,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9AED9E3A1E07855C00C4FCE0 /* Build configuration list for PBXNativeTarget "SHSupportEmailDemo" */ = {
+		9AED9E3A1E07855C00C4FCE0 /* Build configuration list for PBXNativeTarget "SupportEmailDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9AED9E3B1E07855C00C4FCE0 /* Debug */,

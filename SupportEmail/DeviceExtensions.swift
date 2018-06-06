@@ -1,6 +1,6 @@
 //
 //  DeviceExtensions.swift
-//  SHSupportEmailDemo
+//  SupportEmailDemo
 //
 //  Created by Stephen Hayes on 5/28/18.
 //  Copyright © 2018 Stephen Hayes. All rights reserved.

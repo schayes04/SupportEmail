@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  SHSupportEmailDemo
+//  SupportEmailDemo
 //
 //  Created by Stephen Hayes on 12/18/16.
 //  Copyright © 2018 Stephen Hayes. All rights reserved.
@@ -10,10 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var supportEmail: SHSupportEmail?
+    var supportEmail: SupportEmail?
 
     @IBAction func sendSupportEmailPressed() {
-        supportEmail = SHSupportEmail()
+        supportEmail = SupportEmail()
         supportEmail?.customFields = ["Pro Upgrade": "Yes"]
         supportEmail?.tintColor = .blue
         supportEmail?.fileName = "DemoFile"

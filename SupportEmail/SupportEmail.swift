@@ -1,6 +1,6 @@
 //
-//  SHSupportEmail.swift
-//  SHSupportEmail
+//  SupportEmail.swift
+//  SupportEmail
 //
 //  Created by Stephen Hayes on 12/18/16.
 //  Copyright © 2018 Stephen Hayes. All rights reserved.
@@ -9,7 +9,7 @@
 import UIKit
 import MessageUI
 
-public class SHSupportEmail: NSObject {
+public class SupportEmail: NSObject {
 
     public var customFields: [String: Any]?
     public var sendAsTextFile = true
@@ -84,7 +84,7 @@ public class SHSupportEmail: NSObject {
     }
 }
 
-extension SHSupportEmail: MFMailComposeViewControllerDelegate {
+extension SupportEmail: MFMailComposeViewControllerDelegate {
 
     public func mailComposeController(_ controller: MFMailComposeViewController,
                                       didFinishWith result: MFMailComposeResult, error: Error?) {

@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  SHSupportEmailDemo
+//  SupportEmailDemo
 //
 //  Created by Stephen Hayes on 12/18/16.
 //  Copyright © 2018 Stephen Hayes. All rights reserved.
