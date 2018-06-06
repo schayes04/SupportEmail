@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'SHSupportEmail'
-  s.version          = '2.4.0'
+  s.version          = '2.4.1'
   s.summary          = 'Prepopulates emails with support information in iOS apps'
 
   s.description      = <<-DESC
@@ -18,4 +18,6 @@ Pod::Spec.new do |s|
   s.source_files = 'SHSupportEmail/*.swift'
 
   s.ios.frameworks = 'UIKit', 'MessageUI'
+
+  s.deprecated_in_favor_of = 'SupportEmail'
 end
