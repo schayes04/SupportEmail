@@ -2,4 +2,4 @@ language: objective-c
 osx_image: xcode9.3
 
 script: 
-  - xcodebuild -project Example/SHSupportEmailDemo/SHSupportEmailDemo.xcodeproj -target SHSupportEmailDemo -sdk iphonesimulator clean build
+  - xcodebuild -project Example/SupportEmailDemo/SupportEmailDemo.xcodeproj -target SupportEmailDemo -sdk iphonesimulator clean build
