@@ -3,7 +3,8 @@
 
 Prepopulates emails with support information in iOS apps
 
-<img src="/Screenshot.PNG" width="300">
+<img src="/Screenshot1.PNG" width="300">
+<img src="/Screenshot2.PNG" width="300">
 
 ### About
 SupportEmail is about simplifying support for apps. By prepopulating device information in your embedded support email link, you can save time and needless back and forth between you and your users. Check out [Countdown Widget](https://itunes.apple.com/us/app/countdown-widget-keep-track/id917514700?mt=8) to see SupportEmail in action.
