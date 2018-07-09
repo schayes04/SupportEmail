@@ -4,8 +4,8 @@
 Prepopulates emails with support information in iOS apps
 
 <p float="left">
-    <img src="/Screenshot1.PNG" width="300" />
-    <img src="/Screenshot2.PNG" width="300" />
+    <img src="/ScreenshotAsText.png" width="300" />
+    <img src="/ScreenshotAsFile.png" width="300" />
 </p>
 
 ### About
