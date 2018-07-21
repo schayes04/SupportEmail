@@ -46,7 +46,7 @@ public class SupportEmail: NSObject {
         }
 
         if let tintColor = tintColor {
-            let attributes = [NSAttributedStringKey.foregroundColor: tintColor]
+            let attributes = [NSAttributedString.Key.foregroundColor: tintColor]
 
             mailComposeViewController.navigationBar.tintColor = tintColor
             mailComposeViewController.navigationBar.titleTextAttributes = attributes
