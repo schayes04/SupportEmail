@@ -14,7 +14,6 @@ public class SupportEmail: NSObject {
     public var customFields: [String: Any]?
     public var sendAsTextFile = true
     public var tintColor: UIColor?
-    public var statusBarStyle = UIStatusBarStyle.lightContent
     public var fileName = "Device Info"
 
     private var mailCompletionHandler: ((MFMailComposeResult, Error?) -> Void)?
@@ -52,11 +51,7 @@ public class SupportEmail: NSObject {
             mailComposeViewController.navigationBar.titleTextAttributes = attributes
         }
 
-        viewController.present(mailComposeViewController, animated: true) { [weak self] in
-            if let weakSelf = self {
-                UIApplication.shared.statusBarStyle = weakSelf.statusBarStyle
-            }
-        }
+        viewController.present(mailComposeViewController, animated: true)
     }
 
     /// Generate the body of the email

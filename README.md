@@ -12,16 +12,16 @@ Prepopulates emails with support information in iOS apps
 SupportEmail is about simplifying support for apps. By prepopulating device information in your embedded support email link, you can save time and needless back and forth between you and your users. Check out [Countdown Widget](https://itunes.apple.com/us/app/countdown-widget-keep-track/id917514700?mt=8) to see SupportEmail in action.
 
 ### Requirements
-- Xcode 9.0+
+- Xcode 10.0+
 - iOS 8.0+
-- Swift 4.0+
+- Swift 4.2+
 
 ### Installation
 #### CocoaPods
 
 The preferred installation method is with [CocoaPods](https://cocoapods.org). Add the following to your Podfile:
 ```ruby
-pod 'SupportEmail', '~> 1.0'
+pod 'SupportEmail', '~> 2.0'
 ```
 
 ### Usage
@@ -61,10 +61,9 @@ SupportEmail allows you to provide choose between sending a text file or just co
     supportEmail.sendAsTextFile = true
     supportEmail.fileName = "Sample File Name"
 
-SupportEmail allows you to provide a tintColor in order to customize the appearance of the navigation bar. It also allows you to specify the status bar style.
+SupportEmail allows you to provide a tintColor in order to customize the appearance of the navigation bar.
 
     supportEmail.tintColor = .blue
-    supportEmail.statusBarStyle = .lightContent
 
 ### License
 
