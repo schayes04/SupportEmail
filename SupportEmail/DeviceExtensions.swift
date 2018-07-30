@@ -22,14 +22,17 @@ extension UIDevice {
         switch identifier {
 
         // Simulators
+
         case "i386", "x86_64":
             return "Simulator"
 
         // iPods
+
         case "iPod1,1", "iPod2,1", "iPod3,1", "iPod4,1", "iPod5,1", "iPod7,1":
             return "iPod Touch"
 
         // iPhones
+
         case "iPhone1,1":
             return "iPhone 2G"
         case "iPhone1,2":
@@ -68,30 +71,42 @@ extension UIDevice {
             return "iPhone X"
 
         // iPads
+
         case "iPad1,1":
-            return "iPad 1"
+            return "iPad (1st Generation)"
         case "iPad2,1", "iPad2,2", "iPad2,3", "iPad2,4":
-            return "iPad 2"
-        case "iPad2,5", "iPad2,6", "iPad2,7":
-            return "iPad Mini"
+            return "iPad (2nd Generation)"
         case "iPad3,1", "iPad3,2", "iPad3,3":
-            return "iPad 3"
+            return "iPad (3rd Generation)"
         case "iPad3,4", "iPad3,5", "iPad3,6":
-            return "iPad 4"
-        case "iPad4,1", "iPad4,2":
-            return "iPad Air"
+            return "iPad (4th Generation)"
+        case "iPad6,11", "iPad6,12":
+            return "iPad (5th Generation)"
+        case "iPad7,5", "iPad7,6":
+            return "iPad (6th Generation)"
+
+        case "iPad2,5", "iPad2,6", "iPad2,7":
+            return "iPad Mini (1st Generation)"
         case "iPad4,4", "iPad4,5", "iPad4,6":
-            return "iPad Mini 2"
+            return "iPad Mini (2nd Generation)"
         case "iPad4,7", "iPad4,8", "iPad4,9":
-            return "iPad Mini 3"
+            return "iPad Mini (3rd Generation)"
         case "iPad5,1", "iPad5,2":
-            return "iPad Mini 4"
+            return "iPad Mini (4th Generation)"
+
+        case "iPad4,1", "iPad4,2":
+            return "iPad Air (1st Generation)"
         case "iPad5,3", "iPad5,4":
-            return "iPad Air 2"
+            return "iPad Air (2nd Generation)"
+
         case "iPad6,3", "iPad6,4":
-            return "iPad Pro 9.7inch"
+            return "iPad Pro 9.7inch (1st Generation)"
+        case "iPad7,3", "iPad7,4":
+            return "iPad Pro 10.5inch (1st Generation)"
         case "iPad6,7", "iPad6,8":
-            return "iPad Pro 12.9inch"
+            return "iPad Pro 12.9inch (1st Generation)"
+        case "iPad7,1", "iPad7,2":
+            return "iPad Pro 12.9inch (2nd Generation)"
 
         default:
             return "Unknown identifier: \(identifier)"
