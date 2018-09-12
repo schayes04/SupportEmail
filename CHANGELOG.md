@@ -1,4 +1,4 @@
-## 2.0.0 (TBD)
+## 2.0.0 (9/12/2018)
 
 - Updated to Swift 4.2
 - Removed deprecated statusBarStyle setting method
