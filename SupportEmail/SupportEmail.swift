@@ -15,6 +15,7 @@ public class SupportEmail: NSObject {
     public var sendAsTextFile = true
     public var tintColor: UIColor?
     public var fileName = "Device Info"
+    public var baseLocale = Locale(identifier: "en_US")
 
     private var mailCompletionHandler: ((MFMailComposeResult, Error?) -> Void)?
 
@@ -73,7 +74,7 @@ public class SupportEmail: NSObject {
 
         deviceInfo.append("Device Model: \(UIDevice.modelName)\n")
         deviceInfo.append("System Version: \(UIDevice.current.systemName) \(UIDevice.current.systemVersion)\n")
-        deviceInfo.append("System Locale: \(Locale.current.identifier)")
+        deviceInfo.append("System Locale: \(baseLocale.localizedString(forIdentifier: Locale.current.identifier) ?? Locale.current.identifier)")
 
         return deviceInfo
     }

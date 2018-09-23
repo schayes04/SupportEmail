@@ -1,3 +1,7 @@
+## 2.2.0 (9/23/2018)
+
+* Added baseLocale setting. Email now includes device locale localized for base locale.
+
 ## 2.1.0 (9/16/2018)
 
 * Added device identifiers for iPhone XR, iPhone XS, and iPhone XS Max

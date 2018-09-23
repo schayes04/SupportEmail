@@ -64,6 +64,10 @@ SupportEmail allows you to provide choose between sending a text file or just co
 SupportEmail allows you to provide a tintColor in order to customize the appearance of the navigation bar.
 
     supportEmail.tintColor = .blue
+    
+SupportEmail allows you to provide a baseLocale in order to localize the system locale in the email. Defaults to en-US.
+    
+    supportEmail.baseLocale = Locale(identifier: "es-US")
 
 ### License
 
