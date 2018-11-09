@@ -21,7 +21,7 @@ SupportEmail is about simplifying support for apps. By prepopulating device info
 
 The preferred installation method is with [CocoaPods](https://cocoapods.org). Add the following to your Podfile:
 ```ruby
-pod 'SupportEmail', '~> 2.1'
+pod 'SupportEmail', '~> 2.3.0'
 ```
 
 ### Usage

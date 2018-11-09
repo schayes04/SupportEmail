@@ -1,3 +1,7 @@
+## 2.3.0 (11/8/2018)
+
+* Added device identifiers for iPad Pro (3rd generation)
+
 ## 2.2.0 (9/23/2018)
 
 * Added baseLocale setting. Email now includes device locale localized for base locale.
