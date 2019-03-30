@@ -12,16 +12,16 @@ Prepopulates emails with support information in iOS apps
 SupportEmail is about simplifying support for apps. By prepopulating device information in your embedded support email link, you can save time and needless back and forth between you and your users. Check out [Countdown Widget](https://itunes.apple.com/us/app/countdown-widget-keep-track/id917514700?mt=8) to see SupportEmail in action.
 
 ### Requirements
-- Xcode 10.0+
+- Xcode 10.2+
 - iOS 8.0+
-- Swift 4.2+
+- Swift 5.0+
 
 ### Installation
 #### CocoaPods
 
 The preferred installation method is with [CocoaPods](https://cocoapods.org). Add the following to your Podfile:
 ```ruby
-pod 'SupportEmail', '~> 2.3.0'
+pod 'SupportEmail', '~> 3.0'
 ```
 
 ### Usage
@@ -29,7 +29,7 @@ Due to how MFMailComposeViewController works, you must retain a reference to Sup
 
     var supportEmail: SupportEmail?
 
-Using SupportEmail is really simple and has just one method. `send` will allow you to craft the email and handle the end result:
+Using SupportEmail is simple and has just one method. `send` will allow you to craft the email and handle the end result:
 
     supportEmail = SupportEmail()
     supportEmail.send(to: ["support@test.com"], subject: "Support", from: self) { result, error in

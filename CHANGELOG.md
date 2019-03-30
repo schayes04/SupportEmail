@@ -1,3 +1,7 @@
+## 3.0.0 (TBD)
+
+* Migrated to Swift 5.0
+
 ## 2.3.0 (11/8/2018)
 
 * Added device identifiers for iPad Pro (3rd generation)

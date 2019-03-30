@@ -27,6 +27,8 @@ class ViewController: UIViewController {
                 print("Message saved")
             case .sent:
                 print("Message sent")
+            default:
+                print("Unknown case")
             }
         }
     }
