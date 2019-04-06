@@ -13,6 +13,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/schayes04/SupportEmail.git', :tag => s.version }
   s.social_media_url = 'https://twitter.com/shayesapps'
 
+  s.swift_version = '5.0'
   s.ios.deployment_target = '8.0'
   s.source_files = 'SupportEmail/*.swift'
   s.ios.frameworks = 'UIKit', 'MessageUI'
