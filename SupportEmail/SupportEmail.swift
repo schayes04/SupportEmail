@@ -16,7 +16,8 @@ public class SupportEmail: NSObject {
     public var tintColor: UIColor?
     public var fileName = "Device Info"
     public var baseLocale = Locale(identifier: "en_US")
-
+    public var bodyPrefix = ""
+    
     private var mailCompletionHandler: ((MFMailComposeResult, Error?) -> Void)?
 
     public func send(to recipients: [String],
@@ -38,11 +39,12 @@ public class SupportEmail: NSObject {
 
         let deviceInfo = generateEmailBody()
         if sendAsTextFile, let data = deviceInfo.data(using: .utf8) {
+            mailComposeViewController.setMessageBody(bodyPrefix, isHTML: false)
             mailComposeViewController.addAttachmentData(data, mimeType: "text/plain", fileName: fileName)
         } else {
             /// Add new lines to leave space for the user to write their own text
-            let deviceInfoNewLines = "\n\n\n\n------------------\n" + deviceInfo
-            mailComposeViewController.setMessageBody(deviceInfoNewLines, isHTML: false)
+            let body = bodyPrefix + "\n\n\n\n------------------\n" + deviceInfo
+            mailComposeViewController.setMessageBody(body, isHTML: false)
         }
 
         if let tintColor = tintColor {
