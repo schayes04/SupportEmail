@@ -69,6 +69,10 @@ SupportEmail allows you to provide a baseLocale in order to localize the system 
     
     supportEmail.baseLocale = Locale(identifier: "es-US")
 
+SupportEmail allows you to provide a bodyPrefix that adds a default body to the email
+    
+    supportEmail.bodyPrefix = "Please add any relevant feedback:\n"
+    
 ### License
 
 This code is distributed under the terms and conditions of the [MIT license](LICENSE).
