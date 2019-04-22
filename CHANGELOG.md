@@ -1,3 +1,8 @@
+## 3.1.0 (TBD)
+
+* Added device identifiers for iPad Mini 5 & iPad Air 3
+* Added ability to have default body of email
+
 ## 3.0.0 (3/30/2019)
 
 * Migrated to Swift 5.0

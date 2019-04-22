@@ -99,11 +99,15 @@ extension UIDevice {
             return "iPad Mini (3rd Generation)"
         case "iPad5,1", "iPad5,2":
             return "iPad Mini (4th Generation)"
+        case "iPad11,1", "iPad11,2":
+            return "iPad Mini (5th Generation)"
 
-        case "iPad4,1", "iPad4,2":
+        case "iPad4,1", "iPad4,2", "iPad4,3":
             return "iPad Air (1st Generation)"
         case "iPad5,3", "iPad5,4":
             return "iPad Air (2nd Generation)"
+        case "iPad11,3", "iPad11,4":
+            return "iPad Air (3rd Generation)"
 
         case "iPad6,3", "iPad6,4":
             return "iPad Pro 9.7inch (1st Generation)"
