@@ -1,4 +1,4 @@
-## 3.1.0 (TBD)
+## 3.1.0 (4/22/2019)
 
 * Added device identifiers for iPad Mini 5 & iPad Air 3
 * Added ability to have default body of email
