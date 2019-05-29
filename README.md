@@ -27,24 +27,24 @@ pod 'SupportEmail', '~> 3.0'
 ### Usage
 Due to how MFMailComposeViewController works, you must retain a reference to SupportEmail outside of where you are sending the email.
 ```swift
-    var supportEmail: SupportEmail?
+var supportEmail: SupportEmail?
 ```
 
 Using SupportEmail is simple and has just one method. `send` will allow you to craft the email and handle the end result:
 ```swift
-    supportEmail = SupportEmail()
-    supportEmail.send(to: ["support@test.com"], subject: "Support", from: self) { result, error in
-        switch result {
-        case .cancelled:
-            print("Message cancelled")
-        case .failed:
-            print("Message failed")
-        case .saved:
-            print("Message saved")
-        case .sent:
-            print("Message sent")
-        }
+supportEmail = SupportEmail()
+supportEmail.send(to: ["support@test.com"], subject: "Support", from: self) { result, error in
+    switch result {
+    case .cancelled:
+        print("Message cancelled")
+    case .failed:
+        print("Message failed")
+    case .saved:
+        print("Message saved")
+    case .sent:
+        print("Message sent")
     }
+}
 ```
 
 The send function takes 3 arguments:
@@ -55,29 +55,29 @@ The send function takes 3 arguments:
 ### Advanced
 SupportEmail also supports providing custom arguments.
 ```swift
-    supportEmail.customFields = ["Pro Upgrade": "Yes"]
+supportEmail.customFields = ["Pro Upgrade": "Yes"]
 ```
 
 ### Customization
 SupportEmail allows you to provide choose between sending a text file or just content in the email body. Defaults to sending as a text file. If you are sending as a text file you can also specify the file name.
 ```swift
-    supportEmail.sendAsTextFile = true
-    supportEmail.fileName = "Sample File Name"
+supportEmail.sendAsTextFile = true
+supportEmail.fileName = "Sample File Name"
 ```
 
 SupportEmail allows you to provide a tintColor in order to customize the appearance of the navigation bar.
 ```swift
-    supportEmail.tintColor = .blue
+supportEmail.tintColor = .blue
 ```
 
 SupportEmail allows you to provide a baseLocale in order to localize the system locale in the email. Defaults to en-US.
 ```swift
-    supportEmail.baseLocale = Locale(identifier: "es-US")
+supportEmail.baseLocale = Locale(identifier: "es-US")
 ```
 
 SupportEmail allows you to provide a bodyPrefix that adds a default body to the email
 ```swift
-    supportEmail.bodyPrefix = "Please add any relevant feedback:\n"
+supportEmail.bodyPrefix = "Please add any relevant feedback:\n"
 ```
 
 ### License
