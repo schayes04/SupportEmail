@@ -1,3 +1,9 @@
+# CHANGELOG
+
+## 3.2.0 (6/16/2019)
+
+* Added ability to change modalPresentationStyle
+
 ## 3.1.0 (4/22/2019)
 
 * Added device identifiers for iPad Mini 5 & iPad Air 3

@@ -17,6 +17,7 @@ public class SupportEmail: NSObject {
     public var fileName = "Device Info"
     public var baseLocale = Locale(identifier: "en_US")
     public var bodyPrefix = ""
+    public var modalPresentationStyle = UIModalPresentationStyle.fullScreen
     
     private var mailCompletionHandler: ((MFMailComposeResult, Error?) -> Void)?
 
@@ -33,6 +34,7 @@ public class SupportEmail: NSObject {
 
         let mailComposeViewController = MFMailComposeViewController()
         mailComposeViewController.mailComposeDelegate = self
+        mailComposeViewController.modalPresentationStyle = modalPresentationStyle
 
         mailComposeViewController.setToRecipients(recipients)
         mailComposeViewController.setSubject(subject)

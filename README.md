@@ -80,6 +80,11 @@ SupportEmail allows you to provide a bodyPrefix that adds a default body to the 
 supportEmail.bodyPrefix = "Please add any relevant feedback:\n"
 ```
 
+SupportEmail allows you to change the modalPresentationStyle. Defaults to .fullScreen.
+```swift
+supportEmail.modalPresentationStyle = .formSheet
+```
+
 ### License
 
 This code is distributed under the terms and conditions of the [MIT license](LICENSE).
