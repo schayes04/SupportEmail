@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		9A60C8311E0787EC0088B6C9 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A60C8301E0787EC0088B6C9 /* MessageUI.framework */; };
+		9AE8148A22C2E86D0002834A /* DeviceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE8148822C2E86D0002834A /* DeviceExtensions.swift */; };
+		9AE8148B22C2E86D0002834A /* SupportEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE8148922C2E86D0002834A /* SupportEmail.swift */; };
 		9AFA862120C76F0B0020E692 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFA861920C76F0B0020E692 /* ViewController.swift */; };
 		9AFA862220C76F0B0020E692 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AFA861A20C76F0B0020E692 /* Assets.xcassets */; };
 		9AFA862320C76F0B0020E692 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AFA861B20C76F0B0020E692 /* LaunchScreen.storyboard */; };
 		9AFA862420C76F0B0020E692 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AFA861D20C76F0B0020E692 /* Main.storyboard */; };
 		9AFA862520C76F0B0020E692 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFA861F20C76F0B0020E692 /* AppDelegate.swift */; };
-		9AFA862A20C76F390020E692 /* DeviceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFA862820C76F390020E692 /* DeviceExtensions.swift */; };
-		9AFA862B20C76F390020E692 /* SupportEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFA862920C76F390020E692 /* SupportEmail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9A60C8301E0787EC0088B6C9 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		9AE8148822C2E86D0002834A /* DeviceExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceExtensions.swift; sourceTree = "<group>"; };
+		9AE8148922C2E86D0002834A /* SupportEmail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportEmail.swift; sourceTree = "<group>"; };
 		9AED9E281E07855C00C4FCE0 /* SupportEmailDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SupportEmailDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AFA861920C76F0B0020E692 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9AFA861A20C76F0B0020E692 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -26,8 +28,6 @@
 		9AFA861E20C76F0B0020E692 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9AFA861F20C76F0B0020E692 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AFA862020C76F0B0020E692 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9AFA862820C76F390020E692 /* DeviceExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceExtensions.swift; sourceTree = "<group>"; };
-		9AFA862920C76F390020E692 /* SupportEmail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportEmail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +50,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9AE8148722C2E86D0002834A /* SupportEmail */ = {
+			isa = PBXGroup;
+			children = (
+				9AE8148822C2E86D0002834A /* DeviceExtensions.swift */,
+				9AE8148922C2E86D0002834A /* SupportEmail.swift */,
+			);
+			name = SupportEmail;
+			path = ../../Sources/SupportEmail;
+			sourceTree = "<group>";
+		};
 		9AED9E1F1E07855B00C4FCE0 = {
 			isa = PBXGroup;
 			children = (
@@ -70,7 +80,7 @@
 		9AFA861820C76F0B0020E692 /* SupportEmailDemo */ = {
 			isa = PBXGroup;
 			children = (
-				9AFA862720C76F390020E692 /* SupportEmail */,
+				9AE8148722C2E86D0002834A /* SupportEmail */,
 				9AFA861920C76F0B0020E692 /* ViewController.swift */,
 				9AFA861A20C76F0B0020E692 /* Assets.xcassets */,
 				9AFA861B20C76F0B0020E692 /* LaunchScreen.storyboard */,
@@ -79,16 +89,6 @@
 				9AFA862020C76F0B0020E692 /* Info.plist */,
 			);
 			path = SupportEmailDemo;
-			sourceTree = "<group>";
-		};
-		9AFA862720C76F390020E692 /* SupportEmail */ = {
-			isa = PBXGroup;
-			children = (
-				9AFA862820C76F390020E692 /* DeviceExtensions.swift */,
-				9AFA862920C76F390020E692 /* SupportEmail.swift */,
-			);
-			name = SupportEmail;
-			path = ../../../SupportEmail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,6 +108,8 @@
 			dependencies = (
 			);
 			name = SupportEmailDemo;
+			packageProductDependencies = (
+			);
 			productName = SHSupportEmailDemo;
 			productReference = 9AED9E281E07855C00C4FCE0 /* SupportEmailDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -182,9 +184,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AFA862A20C76F390020E692 /* DeviceExtensions.swift in Sources */,
+				9AE8148A22C2E86D0002834A /* DeviceExtensions.swift in Sources */,
 				9AFA862520C76F0B0020E692 /* AppDelegate.swift in Sources */,
-				9AFA862B20C76F390020E692 /* SupportEmail.swift in Sources */,
+				9AE8148B22C2E86D0002834A /* SupportEmail.swift in Sources */,
 				9AFA862120C76F0B0020E692 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

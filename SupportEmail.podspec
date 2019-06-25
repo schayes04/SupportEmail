@@ -15,6 +15,6 @@ Pod::Spec.new do |s|
 
   s.swift_version = '5.0'
   s.ios.deployment_target = '8.0'
-  s.source_files = 'SupportEmail/*.swift'
+  s.source_files = 'Sources/SupportEmail/*.swift'
   s.ios.frameworks = 'UIKit', 'MessageUI'
 end

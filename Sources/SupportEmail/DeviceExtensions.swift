@@ -1,11 +1,3 @@
-//
-//  DeviceExtensions.swift
-//  SupportEmail
-//
-//  Created by Stephen Hayes on 5/28/18.
-//  Copyright © 2018 Stephen Hayes. All rights reserved.
-//
-
 import UIKit
 
 extension UIDevice {
@@ -21,17 +13,17 @@ extension UIDevice {
 
         switch identifier {
 
-        // Simulators
+            // Simulators
 
         case "i386", "x86_64":
             return "Simulator"
 
-        // iPods
+            // iPods
 
         case "iPod1,1", "iPod2,1", "iPod3,1", "iPod4,1", "iPod5,1", "iPod7,1":
             return "iPod Touch"
 
-        // iPhones
+            // iPhones
 
         case "iPhone1,1":
             return "iPhone 2G"
@@ -76,7 +68,7 @@ extension UIDevice {
         case "iPhone11,8":
             return "iPhone XR"
 
-        // iPads
+            // iPads
 
         case "iPad1,1":
             return "iPad (1st Generation)"
