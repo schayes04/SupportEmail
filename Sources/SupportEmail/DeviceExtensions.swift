@@ -2,6 +2,7 @@ import UIKit
 
 extension UIDevice {
 
+    /// User friendly name for each device model identifier.
     static let modelName: String = {
         var systemInfo = utsname()
         uname(&systemInfo)

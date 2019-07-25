@@ -3,16 +3,35 @@ import MessageUI
 
 public class SupportEmail: NSObject {
 
+    /// Dictionary of custom fields to include in email.
     public var customFields: [String: Any]?
+
+    /// Determines if the support information is sent as part of the body or as an attached text file. Defaults to `true`.
     public var sendAsTextFile = true
+
+    /// Tthe tintColor of the navigation bar.
     public var tintColor: UIColor?
+
+    /// The name of the file generated, if `sendAsTextFile` is true. Defaults to `"Device Info"`.
     public var fileName = "Device Info"
+
+    /// The locale used to display the user's locale.
     public var baseLocale = Locale(identifier: "en_US")
+
+    /// A prefix for the email's body. Defaults to `""`.
     public var bodyPrefix = ""
+
+    /// The presentation style used for the modal. Defaults to `.fullScreen`.
     public var modalPresentationStyle = UIModalPresentationStyle.fullScreen
 
+    /// Completion block called with a result and/or error.
     private var mailCompletionHandler: ((MFMailComposeResult, Error?) -> Void)?
 
+    /// Prompt user to send an email with associated support information.
+    /// - Parameter recipients: email addresses.
+    /// - Parameter subject: email subject.
+    /// - Parameter viewController: where the modal should be presented from.
+    /// - Parameter completion: completion block called with a result and/or error.
     public func send(to recipients: [String],
                      subject: String,
                      from viewController: UIViewController,
@@ -42,16 +61,14 @@ public class SupportEmail: NSObject {
         }
 
         if let tintColor = tintColor {
-            let attributes = [NSAttributedString.Key.foregroundColor: tintColor]
-
             mailComposeViewController.navigationBar.tintColor = tintColor
-            mailComposeViewController.navigationBar.titleTextAttributes = attributes
+            mailComposeViewController.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: tintColor]
         }
 
         viewController.present(mailComposeViewController, animated: true)
     }
 
-    /// Generate the body of the email
+    /// Generate the body of the email.
     private func generateEmailBody() -> String {
         var deviceInfo = ""
 
@@ -78,6 +95,10 @@ public class SupportEmail: NSObject {
 
 extension SupportEmail: MFMailComposeViewControllerDelegate {
 
+    /// MFMailComposeViewControllerDelegate when composer finishes.
+    /// - Parameter controller: MFMailComposeViewController
+    /// - Parameter result: MFMailComposeResult
+    /// - Parameter error: Error
     public func mailComposeController(_ controller: MFMailComposeViewController,
                                       didFinishWith result: MFMailComposeResult, error: Error?) {
         controller.dismiss(animated: true)

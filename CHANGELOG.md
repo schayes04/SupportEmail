@@ -7,6 +7,7 @@
 * Added iPod Touch 7th generation identifier
 * Separated identifiers for iPod Touch based off generation
 * Moved minimum supported iOS to 10.0
+* Improved quick help documentation
 
 ## 3.2.0 (6/16/2019)
 
