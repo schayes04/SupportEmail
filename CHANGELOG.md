@@ -4,6 +4,8 @@
 
 * Added support for Swift Package Manager
 * Added support for Carthage
+* Added iPod Touch 7th generation identifier
+* Separated identifiers for iPod Touch based off generation
 * Moved minimum supported iOS to 10.0
 
 ## 3.2.0 (6/16/2019)

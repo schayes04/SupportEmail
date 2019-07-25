@@ -13,17 +13,29 @@ extension UIDevice {
 
         switch identifier {
 
-            // Simulators
+        // Simulators
 
         case "i386", "x86_64":
             return "Simulator"
 
-            // iPods
+        // iPod Touches
 
-        case "iPod1,1", "iPod2,1", "iPod3,1", "iPod4,1", "iPod5,1", "iPod7,1":
-            return "iPod Touch"
+        case "iPod1,1":
+            return "iPod Touch (1st Generation)"
+        case "iPod2,1":
+            return "iPod Touch (2nd Generation)"
+        case "iPod3,1":
+            return "iPod Touch (3rd Generation)"
+        case "iPod4,1":
+            return "iPod Touch (4th Generation)"
+        case "iPod5,1":
+            return "iPod Touch (5th Generation)"
+        case "iPod7,1":
+            return "iPod Touch (6th Generation)"
+        case "iPod9,1":
+            return "iPod Touch (7th Generation)"
 
-            // iPhones
+        // iPhones
 
         case "iPhone1,1":
             return "iPhone 2G"
@@ -68,7 +80,7 @@ extension UIDevice {
         case "iPhone11,8":
             return "iPhone XR"
 
-            // iPads
+        // iPads
 
         case "iPad1,1":
             return "iPad (1st Generation)"
