@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SupportEmail
 
 class ViewController: UIViewController {
 

@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "SupportEmail",
     platforms: [
-        .iOS(.v8)
+        .iOS(.v10)
     ],
     products: [
         .library(name: "SupportEmail", targets: ["SupportEmail"])
