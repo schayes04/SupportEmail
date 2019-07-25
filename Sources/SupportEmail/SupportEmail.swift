@@ -1,11 +1,3 @@
-//
-//  SupportEmail.swift
-//  SupportEmail
-//
-//  Created by Stephen Hayes on 12/18/16.
-//  Copyright © 2018 Stephen Hayes. All rights reserved.
-//
-
 import UIKit
 import MessageUI
 
@@ -18,7 +10,7 @@ public class SupportEmail: NSObject {
     public var baseLocale = Locale(identifier: "en_US")
     public var bodyPrefix = ""
     public var modalPresentationStyle = UIModalPresentationStyle.fullScreen
-    
+
     private var mailCompletionHandler: ((MFMailComposeResult, Error?) -> Void)?
 
     public func send(to recipients: [String],

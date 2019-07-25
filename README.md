@@ -13,15 +13,27 @@ SupportEmail is about simplifying support for apps. By prepopulating device info
 
 ### Requirements
 - Xcode 10.2+
-- iOS 8.0+
+- iOS 10.0+
 - Swift 5.0+
 
 ### Installation
+
+#### Swift Package Manager
+
+The preferred installation method is with [Swift Package Manager](https://github.com/apple/swift-package-manager). Starting with Xcode 11, you can add packages directly from the IDE.
+
 #### CocoaPods
 
-The preferred installation method is with [CocoaPods](https://cocoapods.org). Add the following to your Podfile:
+You can also install with [CocoaPods](https://cocoapods.org). To do so, add the following to your Podfile:
 ```ruby
 pod 'SupportEmail', '~> 3.0'
+```
+
+#### Carthage
+
+You can also install with [Carthage](https://github.com/Carthage/Carthage). To do so, add the following to your Cartfile:
+```
+github "schayes04/SupportEmail"
 ```
 
 ### Usage

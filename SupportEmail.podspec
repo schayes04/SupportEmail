@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'SupportEmail'
-  s.version          = '3.2.0'
+  s.version          = '4.0.0'
   s.summary          = 'Prepopulates emails with support information in iOS apps'
 
   s.description      = <<-DESC
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://twitter.com/shayesapps'
 
   s.swift_version = '5.0'
-  s.ios.deployment_target = '8.0'
-  s.source_files = 'SupportEmail/*.swift'
+  s.ios.deployment_target = '10.0'
+  s.source_files = 'Sources/SupportEmail/*.swift'
   s.ios.frameworks = 'UIKit', 'MessageUI'
 end

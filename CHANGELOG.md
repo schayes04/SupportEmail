@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 4.0.0 (TBD)
+
+* Added support for Swift Package Manager
+* Added support for Carthage
+* Moved minimum supported iOS to 10.0
+
 ## 3.2.0 (6/16/2019)
 
 * Added ability to change modalPresentationStyle

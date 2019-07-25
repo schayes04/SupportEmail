@@ -1,5 +1,6 @@
-language: objective-c
+language: swift
 osx_image: xcode10.2
 
 script: 
-  - xcodebuild -project Example/SupportEmailDemo/SupportEmailDemo.xcodeproj -target SupportEmailDemo -sdk iphonesimulator clean build
+  - xcodebuild -project SupportEmail.xcodeproj -target SupportEmail -sdk iphonesimulator clean build
+  - xcodebuild -project SupportEmail.xcodeproj -target Example -sdk iphonesimulator clean build
