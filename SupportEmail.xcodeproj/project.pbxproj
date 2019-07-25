@@ -10,12 +10,12 @@
 		9A8245CC22EA54320094D9B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A8245C622EA54320094D9B7 /* Assets.xcassets */; };
 		9A8245CD22EA54320094D9B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8245C722EA54320094D9B7 /* AppDelegate.swift */; };
 		9A8245CF22EA54320094D9B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8245C922EA54320094D9B7 /* ViewController.swift */; };
-		9A8245E422EA54D50094D9B7 /* DeviceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8245E022EA54D50094D9B7 /* DeviceExtensions.swift */; };
-		9A8245E622EA54D50094D9B7 /* SupportEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8245E222EA54D50094D9B7 /* SupportEmail.swift */; };
 		9A8245ED22EA56150094D9B7 /* SupportEmail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A82459E22EA53640094D9B7 /* SupportEmail.framework */; };
 		9A8245EE22EA56150094D9B7 /* SupportEmail.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9A82459E22EA53640094D9B7 /* SupportEmail.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9A8245F622EA564D0094D9B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A8245F422EA564D0094D9B7 /* LaunchScreen.storyboard */; };
 		9A8245F722EA564D0094D9B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A8245F522EA564D0094D9B7 /* Main.storyboard */; };
+		9A82460922EA5A240094D9B7 /* SupportEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A82460622EA5A240094D9B7 /* SupportEmail.swift */; };
+		9A82460A22EA5A240094D9B7 /* DeviceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A82460722EA5A240094D9B7 /* DeviceExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,9 +49,6 @@
 		9A8245C722EA54320094D9B7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A8245C822EA54320094D9B7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A8245C922EA54320094D9B7 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9A8245E022EA54D50094D9B7 /* DeviceExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceExtensions.swift; sourceTree = "<group>"; };
-		9A8245E122EA54D50094D9B7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9A8245E222EA54D50094D9B7 /* SupportEmail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportEmail.swift; sourceTree = "<group>"; };
 		9A8245E722EA54FB0094D9B7 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = "../../../../../System/Volumes/Data/Users/shayes/Source Code/iOS/SupportEmail/CHANGELOG.md"; sourceTree = "<group>"; };
 		9A8245E822EA54FB0094D9B7 /* SupportEmail.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = SupportEmail.podspec; path = "../../../../../System/Volumes/Data/Users/shayes/Source Code/iOS/SupportEmail/SupportEmail.podspec"; sourceTree = "<group>"; };
 		9A8245E922EA54FC0094D9B7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = "../../../../../System/Volumes/Data/Users/shayes/Source Code/iOS/SupportEmail/README.md"; sourceTree = "<group>"; };
@@ -59,6 +56,9 @@
 		9A8245EB22EA54FC0094D9B7 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = "../../../../../System/Volumes/Data/Users/shayes/Source Code/iOS/SupportEmail/LICENSE"; sourceTree = "<group>"; };
 		9A8245F422EA564D0094D9B7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A8245F522EA564D0094D9B7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9A82460522EA5A240094D9B7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A82460622EA5A240094D9B7 /* SupportEmail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportEmail.swift; sourceTree = "<group>"; };
+		9A82460722EA5A240094D9B7 /* DeviceExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				9A8245D222EA54900094D9B7 /* Documentation */,
-				9A8245DE22EA54D50094D9B7 /* Sources */,
 				9A8245AE22EA537E0094D9B7 /* Example */,
+				9A8245DE22EA54D50094D9B7 /* Sources */,
 				9A82459F22EA53640094D9B7 /* Products */,
 				9A8245EC22EA56150094D9B7 /* Frameworks */,
 			);
@@ -128,9 +128,7 @@
 		9A8245DE22EA54D50094D9B7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				9A8245E022EA54D50094D9B7 /* DeviceExtensions.swift */,
-				9A8245E222EA54D50094D9B7 /* SupportEmail.swift */,
-				9A8245E122EA54D50094D9B7 /* Info.plist */,
+				9A82460422EA59F70094D9B7 /* SupportEmail */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -140,6 +138,16 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A82460422EA59F70094D9B7 /* SupportEmail */ = {
+			isa = PBXGroup;
+			children = (
+				9A82460722EA5A240094D9B7 /* DeviceExtensions.swift */,
+				9A82460622EA5A240094D9B7 /* SupportEmail.swift */,
+				9A82460522EA5A240094D9B7 /* Info.plist */,
+			);
+			path = SupportEmail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +212,7 @@
 				TargetAttributes = {
 					9A82459D22EA53640094D9B7 = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 					9A8245AC22EA537E0094D9B7 = {
 						CreatedOnToolsVersion = 11.0;
@@ -254,8 +263,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A8245E622EA54D50094D9B7 /* SupportEmail.swift in Sources */,
-				9A8245E422EA54D50094D9B7 /* DeviceExtensions.swift in Sources */,
+				9A82460922EA5A240094D9B7 /* SupportEmail.swift in Sources */,
+				9A82460A22EA5A240094D9B7 /* DeviceExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +411,7 @@
 		9A8245A722EA53640094D9B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -418,6 +428,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.shayesapps.supportemail;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -426,6 +437,7 @@
 		9A8245A822EA53640094D9B7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -450,6 +462,7 @@
 		9A8245BF22EA53800094D9B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -470,6 +483,7 @@
 		9A8245C022EA53800094D9B7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
