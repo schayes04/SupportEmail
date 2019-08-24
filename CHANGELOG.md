@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## 4.0.0 (TBD)
+## 4.0.0 (8/24/2019)
 
 * Added support for Swift Package Manager
 * Added support for Carthage
