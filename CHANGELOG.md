@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 4.1.0 (TBD)
+
+* Added iPhone 11, 11 Pro, & 11 Pro Max identifiers
+
 ## 4.0.0 (8/24/2019)
 
 * Added support for Swift Package Manager
