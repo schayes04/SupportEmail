@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## 4.1.0 (TBD)
+## 4.1.0 (9/20/2019)
 
 * Added iPhone 11, 11 Pro, & 11 Pro Max identifiers
 
