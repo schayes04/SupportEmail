@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 4.2.0 (9/23/2019)
+
+* Added iPad 7th generation identifier
+
 ## 4.1.0 (9/20/2019)
 
 * Added iPhone 11, 11 Pro, & 11 Pro Max identifiers
