@@ -1,8 +1,12 @@
 # CHANGELOG
 
+## 4.3.0 (3/29/2020)
+
+* Added iPad 8th generation identifiers
+
 ## 4.2.0 (9/23/2019)
 
-* Added iPad 7th generation identifier
+* Added iPad 7th generation identifiers
 
 ## 4.1.0 (9/20/2019)
 
