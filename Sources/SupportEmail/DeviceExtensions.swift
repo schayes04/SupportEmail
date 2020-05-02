@@ -86,6 +86,8 @@ extension UIDevice {
             return "iPhone 11 Pro"
         case "iPhone12,5":
             return "iPhone 11 Pro Max"
+        case "iPhone12,8":
+            return "iPhone SE (2nd Generation)"
 
         // iPads
 
@@ -132,11 +134,11 @@ extension UIDevice {
             return "iPad Pro 12.9inch (2nd Generation)"
 
         case "iPad8,1", "iPad8,2", "iPad8,3", "iPad8,4":
-            return "iPad Pro 11inch (3rd Generation)"
+            return "iPad Pro 11inch"
         case "iPad8,5", "iPad8,6", "iPad8,7", "iPad8,8":
             return "iPad Pro 12.9inch (3rd Generation)"
         case "iPad8,9", "iPad8,10":
-            return "iPad Pro 11inch (4th Generation)"
+            return "iPad Pro 11inch (2nd Generation)"
         case "iPad8,11", "iPad8,12":
             return "iPad Pro 12.9inch (4th Generation)"
 
