@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 4.5.0 (9/19/2020)
+
+* Added iPad Air 4th generation & iPad 8th generation identifiers
+
 ## 4.4.0 (5/2/2020)
 
 * Added iPhone SE 2nd generation identifier
