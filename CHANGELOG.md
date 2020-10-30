@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 4.6.0 (10/30/2020)
+
+* Added iPhone 12 identifiers
+
 ## 4.5.0 (9/19/2020)
 
 * Added iPad Air 4th generation & iPad 8th generation identifiers
