@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 4.7.0 (4/23/2021)
+
+* Added iPad Pro 12.9inch 5th Generation & iPad Pro 11inch 3rd Generation identifiers
+
 ## 4.6.0 (10/30/2020)
 
 * Added iPhone 12 identifiers

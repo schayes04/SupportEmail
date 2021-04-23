@@ -9,7 +9,7 @@ Prepopulates emails with support information in iOS apps
 </p>
 
 ### About
-SupportEmail is about simplifying support for apps. By prepopulating device information in your embedded support email link, you can save time and needless back and forth between you and your users. Check out [Countdowns](https://countdowns-app.com) to see SupportEmail in action.
+SupportEmail is about simplifying support for apps. By prepopulating device information in your embedded support email link, you can save time and needless back and forth between you and your users. Check out [Countdowns](https://countdowns-app.com) or [Recurrence](https://recurrence-app.com) to see SupportEmail in action.
 
 ### Requirements
 - Xcode 10.2+
