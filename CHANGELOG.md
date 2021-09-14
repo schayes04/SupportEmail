@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 4.8.0 (9/14/2021)
+
+* Added iPhone 13 identifiers
+* Added iPad 9th gen & iPad mini 6th generation identifiers
+
 ## 4.7.0 (4/23/2021)
 
 * Added iPad Pro 12.9inch 5th Generation & iPad Pro 11inch 3rd Generation identifiers
