@@ -123,6 +123,8 @@ extension UIDevice {
             return "iPad (7th Generation)"
         case "iPad11,6", "iPad11,7":
             return "iPad (8th Generation)"
+        case "iPad12,2":
+            return "iPad (9th Generation)"
 
         case "iPad2,5", "iPad2,6", "iPad2,7":
             return "iPad Mini (1st Generation)"
@@ -134,6 +136,8 @@ extension UIDevice {
             return "iPad Mini (4th Generation)"
         case "iPad11,1", "iPad11,2":
             return "iPad Mini (5th Generation)"
+        case "iPad14,1":
+            return "iPad Mini (6th Generation)"
 
         case "iPad4,1", "iPad4,2", "iPad4,3":
             return "iPad Air (1st Generation)"
